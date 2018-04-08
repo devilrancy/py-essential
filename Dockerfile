@@ -1,4 +1,4 @@
-FROM bitnami/minideb:jessie
+FROM bitnami/python:2-master-prod
 
 MAINTAINER Surisetty, Naresh "naresh@naresh.co"
 
