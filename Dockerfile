@@ -1,4 +1,4 @@
-FROM python:2.7-slim-jessie
+FROM bitnami/minideb:jessie
 
 MAINTAINER Surisetty, Naresh "naresh@naresh.co"
 
