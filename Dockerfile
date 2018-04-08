@@ -13,7 +13,7 @@ RUN chmod +x /etc/profile.d/oracle.sh
 
 # Install Debian Jessie packages
 RUN apt-get update -y && \
-    api-get install -y unzip && \
+    apt-get install -y unzip && \
     apt-get install -y dpkg-dev && \
     apt-get install -y debhelper && \
     apt-get install -y build-essential && \
