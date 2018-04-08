@@ -16,7 +16,15 @@ RUN apt-get update -y && \
     apt-get install -y unzip && \
     apt-get install -y dpkg-dev && \
     apt-get install -y debhelper && \
-    apt-get install -y build-essential && \
+    apt-get install -y gcc && \
+    apt-get install -y g++ && \
+    apt-get install -y libc-dev && \
+    apt-get install -y unixodbc-dev && \
+    apt-get install -y musl-dev && \
+    apt-get install -y openssl && \
+    apt-get install -y postgresql && \
+    apt-get install -y postgresql-libs && \
+    apt-get install -y postgresql-dev && \
     apt-get install -y libaio1 && \
     unzip "/tmp/oracle.zip" -d /usr/lib/ && \
     /etc/profile.d/oracle.sh && \
