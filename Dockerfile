@@ -23,8 +23,9 @@ RUN apt-get update -y && \
     apt-get install -y musl-dev && \
     apt-get install -y openssl && \
     apt-get install -y postgresql && \
-    apt-get install -y postgresql-libs && \
-    apt-get install -y postgresql-dev && \
+    apt-get install -y libpq-dev && \
+    apt-get install -y postgresql-client && \
+    apt-get install -y postgresql-client-common && \
     apt-get install -y libaio1 && \
     unzip "/tmp/oracle.zip" -d /usr/lib/ && \
     /etc/profile.d/oracle.sh && \
