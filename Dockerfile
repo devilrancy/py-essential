@@ -1,4 +1,4 @@
-FROM python:2.7.14-slim-stretch
+FROM python:2.7
 
 MAINTAINER Surisetty, Naresh "naresh@naresh.co"
 
