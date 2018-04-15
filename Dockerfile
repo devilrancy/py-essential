@@ -1,4 +1,4 @@
-FROM bitnami/python:2-master-prod
+FROM 2.7.14-slim-stretch
 
 MAINTAINER Surisetty, Naresh "naresh@naresh.co"
 
@@ -27,6 +27,8 @@ RUN apt-get update -y && \
     apt-get install -y postgresql-client && \
     apt-get install -y postgresql-client-common && \
     apt-get install -y libaio1 && \
+    apt-get install -y tk-dev && \
+    apt-get install -y python-tk && \
     unzip "/tmp/oracle.zip" -d /usr/lib/ && \
     /etc/profile.d/oracle.sh && \
     ldconfig && \
